@@ -1,0 +1,23 @@
+.card1{
+  height: 220px;
+  background-color: rgb(109, 14, 14);
+  background-image: url("https://res.cloudinary.com/dkvjzljuz/image/upload/v1794503288/Gemini_Generated_Image_vpswwrvpswwrvpsw_tzrole.png");
+   background-size:cover;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.navbar-shell {
+  width: 100%;
+  min-height: 100vh;
+}
+.btn-txtContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+h1{
+  color: white;
+}

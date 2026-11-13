@@ -1,0 +1,245 @@
+
+.Nav-container {
+  background: rgba(239, 237, 237, 0.94);
+  color: #f5f5f5;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  box-sizing: border-box;
+  border-color: red;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 0 0 auto;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  order: 0;
+  margin-left: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-size {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.list-container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.list-container li {
+  list-style: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.list-container li:hover {
+  color: #ff1e2d;
+  transform: translateY(-1px);
+}
+
+.input-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: nowrap;
+  order: 0;
+  margin-left: 0;
+
+}
+
+.input-container > div:last-child {
+  display: block;
+}
+
+.input-container input {
+  width: min(320px, 42vw);
+  height: 38px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  margin-left: 0;
+}
+
+.input-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-container input:focus {
+  border-color: rgba(255, 30, 45, 0.9);
+  box-shadow: 0 0 0 3px rgba(255, 30, 45, 0.18);
+}
+
+.action-buttons button {
+  margin: 0;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background: #ff1e2d;
+  border-color: #ff1e2d;
+  transform: translateY(-1px);
+}
+
+.hamburger-button {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-button span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  border-radius: 999px;
+  margin: 0 auto;
+}
+
+
+
+@media (max-width: 900px) {
+  .Nav-container {
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 16px;
+  }
+
+  .navbar-header {
+    flex: 0 0 auto;
+  }
+  
+
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 76px;
+    gap: 0;
+    position: relative;
+  }
+
+  .action-buttons {
+    order: 0;
+    margin-left: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 6px;
+  }
+
+  .logo-container {
+    margin-right: auto;
+  }
+
+  .input-container {
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .hamburger-button {
+    display: flex;
+    margin-left: auto;
+    order: 1;
+  }
+
+  .list-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 12px 0 0;
+  }
+
+  .list-container.open {
+    display: flex;
+  }
+
+  .list-container li {
+    font-size: 0.74rem;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .input-container.open {
+  display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .input-container > div {
+    width: 100%;
+    display: none;
+    justify-content: center;
+  }
+
+  .input-container input {
+    width: min(100%, 280px);
+  }
+
+  .action-buttons button {
+    padding: 0.6rem 0.75rem;
+  }
+}
