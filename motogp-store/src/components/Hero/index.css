@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap');
+
 .card1{
+  position: relative;
+  overflow: hidden;
   height: 220px;
-  background-color: rgb(109, 14, 14);
   background-image: url("https://res.cloudinary.com/dkvjzljuz/image/upload/v1794503288/Gemini_Generated_Image_vpswwrvpswwrvpsw_tzrole.png");
    background-size:cover;
    display: flex;
@@ -9,15 +12,101 @@
    align-items: center;
 
 }
+.hero-slide-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: hero-slide-in 700ms ease both;
+}
+@keyframes hero-slide-in {
+  from { opacity: 0.65; transform: translateX(5%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@media (min-width:500px){
+  .card1{ 
+     min-height: 500px;
+     max-height: 1500px;
+}
+}
+h1{
+   font-family: 'Inter', sans-serif;
+}
 .navbar-shell {
   width: 100%;
   min-height: 100vh;
 }
 .btn-txtContainer{
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
+
 h1{
   color: white;
+}
+.carsoule-btn{
+  background-color: transparent;
+  border: 0px;
+  color: white;
+}
+.carsoule-btn1{
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  margin-top: 45px;
+}
+.hero-title{
+  
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(36px, 5vw, 68px);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: #dc1414;
+  margin-left: 10px;
+
+
+}
+.hero-para {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(14px, 1.5vw, 20px);
+  font-weight: 500;
+  color: #f3f2f2;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+    margin-left: 15px;
+
+}
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+    margin-left: 15px;
+
+  padding: 13px 30px;
+  background-color: #e10600;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 3px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #b80000;
+  transform: translateY(-3px);
 }
