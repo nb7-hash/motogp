@@ -34,7 +34,7 @@ h1{
 }
 .navbar-shell {
   width: 100%;
-  min-height: 100vh;
+  min-height: 30vh;
 }
 .btn-txtContainer{
   position: relative;
@@ -104,6 +104,11 @@ h1{
 
   cursor: pointer;
   transition: all 0.3s ease;
+   clip-path: polygon(
+        8% 0%,
+        100% 0%,
+        92% 100%,
+        0% 100%    );
 }
 
 .hero-btn:hover {
