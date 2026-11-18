@@ -20,7 +20,7 @@
   padding: 12px;
   overflow: hidden;
   border: 4px solid #e91313;
-  background-image: url("https://i.pinimg.com/736x/e3/3d/fc/e33dfcf92bba1ad21e4490ba4139d392.jpg");
+  background-image: url("https://i.pinimg.com/1200x/b2/46/24/b24624bb8a3f5a329ebc44c191ac6c2c.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,11 +29,12 @@
 .content-container {
   min-width: 0;
   margin-left: 4px;
+  width: 220px;
 }
 
 .rider-number,
 .rider-name {
-  color: #fff;
+  color: #f0e8e8;
   font-family: 'Inter', sans-serif;
 }
 
@@ -48,9 +49,9 @@
 
 .rider-name {
   margin-top: 10px;
-  font-size: clamp(14px, 2vw, 18px);
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color:black;
+  font-size: clamp(18px, 2.2vw, 24px);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 .tagcontainer {
@@ -63,12 +64,14 @@
 
 .tagcontainer p {
   margin: 0;
-  color: #c21111;
-  font-size: 15px;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
 }
 
 .tagcontainer span {
   margin-left: 6px;
+  font-size: 13px;
 }
 
 .flag-size {
@@ -95,12 +98,13 @@
   align-items: flex-end;
   flex: 0 1 45%;
   min-width: 0;
+  margin-right: 70px;
 }
 
 .ims {
 
   max-height: 160px;
-  margin-right: 10px;
+  margin-right: 20px;
   
 }
 
@@ -115,14 +119,21 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+      background-image: url("https://i.pinimg.com/736x/1c/ec/a6/1ceca6e84f7dff72c47ed31266b1d033.jpg");
+
   }
 
   .img-container {
     flex: 1 1 auto;
     align-items: flex-end;
+    order: 0;
   }
 
   .ims {
     max-height: 210px;
+    text-align: center;
+  }
+  .content-container{
+    order: 1;
   }
 }
