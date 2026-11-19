@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Black+Ops+One&family=Sekuya&display=swap');
+
+.featured-riders {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+.featured-riders-heading {
+  margin: 24px 16px 0;
+  color: #850d0d;
+   font-family: "Black Ops One", system-ui; font-size: clamp(18px, 3vw, 34px);
+  text-align: left;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 20px;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 24px 16px;
+  margin: 0;
+  padding: 16px;
+
 }
 
 .card {
@@ -111,7 +127,11 @@
 @media (min-width: 600px) {
   .cards-container {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-    padding: 32px 24px;
+    padding: 16px 24px 32px;
+  }
+
+  .featured-riders-heading {
+    margin: 32px 24px 0;
   }
 
   .card {

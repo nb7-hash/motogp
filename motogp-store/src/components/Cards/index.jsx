@@ -8,7 +8,12 @@ import "./index.css";
 const Cards = () => {
  
   return (
-    <section className="cards-container" aria-label="Featured rider">
+    <section className="featured-riders" aria-labelledby="featured-riders-heading">
+      
+      <h1 className="featured-riders-heading" id="featured-riders-heading">
+        🚨Featured Rider
+      </h1>
+      <div className="cards-container">
       { ridersList.map(each=>(
         <div className="card" style={{borderColor:each.teamColor}}>
           <div className="content-container">
@@ -39,6 +44,7 @@ const Cards = () => {
           </div>
         </div>
 ))}
+      </div>
     </section>
   );
 };
