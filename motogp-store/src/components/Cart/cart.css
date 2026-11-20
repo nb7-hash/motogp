@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Black+Ops+One&family=Sekuya&display=swap');
+
+.cart {
+  min-height: 75vh;
+  background-size: cover;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: hero-slide-in 700ms ease both;
+}
+
+@keyframes hero-slide-in {
+  from { opacity: 0.65; transform: translateX(5%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.ims1 {
+  height: 120px;
+  width: 120px;
+}
+
+.cart-card {
+  height: 180px;
+  width: 160px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 8px;
+  background-image: url("https://i.pinimg.com/736x/37/98/1f/37981f08b3b5b16200fbba1e419b6e13.jpg");
+}
+
+.cart-tag {
+  display: flex;
+}
+
+.cartname-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shop-btn {
+  margin-top: 10px;
+  background-color: #e10600;
+  color: #ffffff;
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+}
+
+.shop-btn:hover {
+  background-color: #b80000;
+  transform: translateY(-3px);
+}
