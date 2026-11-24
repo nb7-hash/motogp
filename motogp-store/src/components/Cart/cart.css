@@ -3,38 +3,19 @@
 .cart {
   min-height: 75vh;
   background-size: cover;
+  margin-top: 40px;
 }
 
-.cart-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  animation: hero-slide-in 700ms ease both;
-}
 
-@keyframes hero-slide-in {
-  from { opacity: 0.65; transform: translateX(5%); }
-  to { opacity: 1; transform: translateX(0); }
-}
 
-.ims1 {
-  height: 120px;
-  width: 120px;
-}
 
-.cart-card {
-  height: 180px;
-  width: 160px;
-  margin-top: 20px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 8px;
-  background-image: url("https://i.pinimg.com/736x/37/98/1f/37981f08b3b5b16200fbba1e419b6e13.jpg");
-}
+
+
+
 
 .cart-tag {
   display: flex;
+  margin-left: 10px;
 }
 
 .cartname-container {
@@ -63,3 +44,73 @@
   background-color: #b80000;
   transform: translateY(-3px);
 }
+
+.carousel{
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+  background-color: rgb(1, 1, 24);
+}
+
+.car{
+  flex: 0 0 aut0;
+  height: 215px;
+  width: 200px;
+  background-image: linear-gradient(to right,Black,red
+  );
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.carousel-track{
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.cart-img{
+height: 170px;
+width: 180px;
+border-radius: 10px;
+margin-top: 3px;
+}
+
+ .col{
+  color: rgb(77, 20, 20);
+ }
+ .cartnextbtn{
+  background-color: transparent;
+  border: 0;
+  
+  color: black;
+ }
+ .cartnextbtn:hover{
+    color: rgb(158, 14, 14);
+    transform: translateY(-20%);
+  }
+ .blink{
+  background-color: red;
+  width: 10px;
+  height: 40px;
+  color:red;
+ }
+ .secname{
+     font-family: "Black Ops One", system-ui; font-size: clamp(18px, 3vw, 34px);
+
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-left: 7px;
+ }
