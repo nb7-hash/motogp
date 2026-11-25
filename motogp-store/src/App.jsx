@@ -1,15 +1,27 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Cards from "./components/Cards"
-import Cart from "./components/Cart"
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Cards from "./components/Cards";
+import Cart from "./components/Cart";
 
-import "./App.css"
+import "./App.css";
 
-const App=()=><>
-<Navbar/>
-<Hero/>
-<Cards/>
-<Cart/>
-</>
+const App = () => {
+  const [searchInput, setSearchInput] = useState("");
 
-export default App
+  const onsearch = (value) => {
+
+    setSearchInput(value)
+};
+
+  return (
+    <>
+      <Navbar onsearch={onsearch} />
+      <Hero />
+      <Cards searchname={searchInput}/>
+      <Cart />
+    </>
+  );
+};
+
+export default App;

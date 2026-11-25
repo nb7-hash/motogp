@@ -2,7 +2,7 @@
 const ridersList = [
   {
     id: 1,
-    name: "Marc Márquez",
+    name: "Marc Marquez",
     altname: "Marc Márquez",
     number: 93,
     country: "Spain",
@@ -38,7 +38,7 @@ const ridersList = [
   },
   {
     id: 4,
-    name: "Jorge Martín",
+    name: "Jorge Martin",
     altname: "Jorge Martín",
     number: 89,
     country: "Spain",
@@ -50,7 +50,7 @@ const ridersList = [
   },
   {
     id: 5,
-    name: "Álex Márquez",
+    name: "Alex Marquez",
     altname: "Álex Márquez",
     number: 73,
     country: "Spain",
@@ -62,7 +62,7 @@ const ridersList = [
   },
   {
     id: 6,
-    name: "Fermín Aldeguer",
+    name: "Fermin Aldeguer",
     altname: "Fermín Aldeguer",
     number: 54,
     country: "Spain",
@@ -158,7 +158,7 @@ const ridersList = [
   },
   {
     id: 14,
-    name: "Álex Rins",
+    name: "Alex Rins",
     altname: "Álex Rins",
     number: 42,
     country: "Spain",
@@ -170,7 +170,7 @@ const ridersList = [
   },
   {
     id: 15,
-    name: "Toprak Razgatloğlu",
+    name: "Toprak Razgatloglu",
     altname: "Toprak Razgatloğlu",
     number: 7,
     country: "Türkiye",
@@ -218,7 +218,7 @@ const ridersList = [
   },
   {
     id: 19,
-    name: "Maverick Viñales",
+    name: "Maverick Vinales",
     altname: "Maverick Viñales",
     number: 12,
     country: "Spain",
@@ -242,7 +242,7 @@ const ridersList = [
   },
   {
     id: 21,
-    name: "Raúl Fernández",
+    name: "Raúl Fernandez",
     altname: "Raúl Fernández",
     number: 25,
     country: "Spain",

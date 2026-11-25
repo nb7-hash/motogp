@@ -5,8 +5,10 @@ import "./index.css";
 
 
 
-const Cards = () => {
- 
+const Cards = (props) => {
+  const {searchname}=props 
+     
+  const searchLst=ridersList.filter(each=>each.name.toLowerCase().includes(searchname.toLowerCase()))
   return (
     <section className="featured-riders" aria-labelledby="featured-riders-heading">
       
@@ -14,7 +16,7 @@ const Cards = () => {
         🚨Featured Rider
       </h1>
       <div className="cards-container">
-      { ridersList.map(each=>(
+      { searchLst.map(each=>(
         <div className="card" style={{borderColor:each.teamColor}}>
           <div className="content-container">
             <div className="no">

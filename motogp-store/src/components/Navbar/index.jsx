@@ -27,7 +27,7 @@ const lst = [
 class Navbar extends Component {
   state = {
     isMenuOpen: false,
-    isIcon:false
+    isIcon:false,searchs:""
   };
 
   toggleMenu = () => {
@@ -35,6 +35,11 @@ class Navbar extends Component {
   };
   togglebtn=()=>{
     this.setState(prev=>({isIcon:!prev.isIcon}))
+  }
+
+  search=(event)=>{
+       const {onsearch}=this.props 
+       onsearch(event.target.value)
   }
 
   render() {
@@ -80,7 +85,7 @@ class Navbar extends Component {
 
           <div className={`input-container${isMenuOpen ? " open" : ""}`}>
             <div>
-              <input type="search" placeholder="Search" />
+              <input type="search" placeholder="Search" onChange={this.search}/>
             </div>
           
           </div>
