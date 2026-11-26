@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Cards from "./components/Cards";
 import Cart from "./components/Cart";
+import Gallery from "./components/GalleryCard"
 
 import "./App.css";
 
@@ -20,6 +21,7 @@ const App = () => {
       <Hero />
       <Cards searchname={searchInput}/>
       <Cart />
+      <Gallery/>
     </>
   );
 };

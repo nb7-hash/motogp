@@ -1,0 +1,52 @@
+.gallery-container {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://i.pinimg.com/736x/7a/1f/8d/7a1f8dd0637ee01b6c408d5f94bba645.jpg");
+  color: white;
+  overflow: hidden;
+}
+
+.photo-txt {
+  text-align: center;
+  margin-top: 15px;
+}
+.photo-moment-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.photo-btn {
+  background-color: black;
+  border: 1px solid white;
+  height: 40px;
+  border-radius: 17px;
+  color: white;
+  width: 120px;
+}
+.photo-btn:hover {
+  background-color: rgb(120, 13, 13);
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+}
+.phot-card{
+    min-height: 200px;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/dkvjzljuz/image/upload/v1795712785/gettyimages-2204935722-612x612_cfjrrc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.photo-tag{
+  background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+}
