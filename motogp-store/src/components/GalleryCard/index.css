@@ -45,6 +45,10 @@
     flex-direction: column;
     justify-content: flex-end;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.phot-card:hover{
+transform: scale(0.9)
 }
 .photo-tag{
   background-color: rgba(0, 0, 0, 0.5);
